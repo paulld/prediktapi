@@ -14,7 +14,7 @@ child @matches => :matches do
   end
 
   node :href do |match|
-    match_url(match)
+    api_match_url(match)
   end
 
   node :linked do |match|
@@ -29,9 +29,9 @@ end
 # :links provides a hash of URL templates to satisfy the hypermedia constraint
 node :links do
   {
-    "matches.league" => leagues_url + "/{matches.league}",
-    "matches.bets" => bets_url + "/{matches.bets}",
-    "matches.match_comments" => match_comments_url + "/{matches.match_comments}"
+    "matches.league" => lapi_eagues_url + "/{matches.league}",
+    "matches.bets" => api_bets_url + "/{matches.bets}",
+    "matches.match_comments" => api_match_comments_url + "/{matches.match_comments}"
   }
 end
 

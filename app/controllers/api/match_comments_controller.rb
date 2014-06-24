@@ -1,4 +1,4 @@
-class MatchCommentsController < RestController
+class Api::MatchCommentsController < RestController
 
   protected
 

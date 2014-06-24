@@ -1,4 +1,4 @@
-class BetsController < RestController
+class Api::BetsController < RestController
 
   protected
 

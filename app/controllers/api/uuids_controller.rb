@@ -1,4 +1,4 @@
-class UuidsController < ApplicationController
+class Api::UuidsController < ApplicationController
 
   def create
     @uuids = get_uuids(

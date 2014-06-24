@@ -1,4 +1,4 @@
-class RegistrantsController < RestController
+class Api::RegistrantsController < RestController
 
   protected
 

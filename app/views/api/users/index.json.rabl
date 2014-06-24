@@ -21,17 +21,17 @@ child @users => :users do
   end
 
   node :href do |user|
-    user_url(user)
+    api_user_url(user)
   end
 end
 
 node :links do
   {
-    "users.bets" => bets_url + "/{users.bets}",
-    "users.followings_as_followers" => followings_url + "/{users.followings_as_followers}",
-    "users.followings_as_followees" => followings_url + "/{users.followings_as_followees}",
-    "users.profile_comments_as_commentors" => profile_comments_url + "/{users.profile_comments_as_commentors}",
-    "users.profile_comments_as_commentees" => profile_comments_url + "/{users.profile_comments_as_commentees}"
+    "users.bets" => api_bets_url + "/{users.bets}",
+    "users.followings_as_followers" => api_followings_url + "/{users.followings_as_followers}",
+    "users.followings_as_followees" => api_followings_url + "/{users.followings_as_followees}",
+    "users.profile_comments_as_commentors" => api_profile_comments_url + "/{users.profile_comments_as_commentors}",
+    "users.profile_comments_as_commentees" => api_profile_comments_url + "/{users.profile_comments_as_commentees}"
     # TODO : links for followings and profile_comments
   }
 end

@@ -17,15 +17,15 @@ child @bets => :bets do
   end
 
   node :href do |bet|
-    bet_url(bet)
+    api_bet_url(bet)
   end
 end
 
 # :links provides a hash of URL templates to satisfy the hypermedia constraint
 node :links do
   {
-    "bets.user" => users_url + "/{bets.user}",
-    "bets.match" => matches_url + "/{bets.match}"
+    "bets.user" => api_users_url + "/{bets.user}",
+    "bets.match" => api_matches_url + "/{bets.match}"
   }
 end
 

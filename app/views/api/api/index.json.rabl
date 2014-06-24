@@ -7,15 +7,15 @@ object false
 # Because we're in a view, view helpers such as the route helpers are available
 node :links do
   {
-    uuid: uuid_url,
-    registrants: registrants_url,
-    users: users_url,
-    leagues: leagues_url,
-    matches: matches_url,
-    bets: bets_url,
-    match_comments: match_comments_url,
-    profile_comments: profile_comments_url,
-    followings: followings_url
+    uuid: api_uuid_url,
+    registrants: api_registrants_url,
+    users: api_users_url,
+    leagues: api_leagues_url,
+    matches: api_matches_url,
+    bets: api_bets_url,
+    match_comments: api_match_comments_url,
+    profile_comments: api_profile_comments_url,
+    followings: api_followings_url
   }
 end
 

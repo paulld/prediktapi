@@ -15,15 +15,15 @@ child @profile_comments => :profile_comments do
   end
 
   node :href do |profile_comment|
-    profile_comment_url(profile_comment)
+    api_profile_comment_url(profile_comment)
   end
 end
 
 # :links provides a hash of URL templates to satisfy the hypermedia constraint
 node :links do
   {
-    "profile_comment.profile_commentee" => users_url + "/{profile_comment.profile_commentee}",
-    "profile_comment.profile_commentor" => users_url + "/{profile_comment.profile_commentor}"
+    "profile_comment.profile_commentee" => api_users_url + "/{profile_comment.profile_commentee}",
+    "profile_comment.profile_commentor" => api_users_url + "/{profile_comment.profile_commentor}"
   }
 end
 

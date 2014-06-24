@@ -1,6 +1,8 @@
 Prediktapi::Application.routes.draw do
 
-  scope defaults: { format: :json } do
+  # scope defaults: { format: :json } do
+  namespace :api, :defaults => {:format => :json} do
+  # namespace :api, :defaults => {:format => :json}, :constraints => {:subdomain => "api"} do
 
     root 'api#index'
 

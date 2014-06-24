@@ -12,14 +12,14 @@ child @leagues => :leagues do
   end
 
   node :href do |league|
-    league_url(league)
+    api_league_url(league)
   end
 end
 
 # :links provides a hash of URL templates to satisfy the hypermedia constraint
 node :links do
   {
-    "leagues.matches" => matches_url + "/{leagues.matches}"
+    "leagues.matches" => api_matches_url + "/{leagues.matches}"
   }
 end
 

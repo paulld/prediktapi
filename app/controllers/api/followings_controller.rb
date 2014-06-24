@@ -1,4 +1,4 @@
-class FollowingsController < RestController
+class Api::FollowingsController < RestController
 
   protected
 

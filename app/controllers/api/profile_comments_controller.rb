@@ -1,4 +1,4 @@
-class ProfileCommentsController < RestController
+class Api::ProfileCommentsController < RestController
 
   protected
 

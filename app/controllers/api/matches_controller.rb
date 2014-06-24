@@ -1,4 +1,4 @@
-class MatchesController < RestController
+class Api::MatchesController < RestController
 
   protected
 
