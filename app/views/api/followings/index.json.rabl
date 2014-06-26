@@ -13,15 +13,15 @@ child @followings => :followings do
   end
 
   node :href do |following|
-    following_url(following)
+    api_following_url(following)
   end
 end
 
 # :links provides a hash of URL templates to satisfy the hypermedia constraint
 node :links do
   {
-    "followings.follower" => users_url + "/{followings.follower}",
-    "followings.followee" => users_url + "/{followings.followee}"
+    "followings.follower" => api_users_url + "/{followings.follower}",
+    "followings.followee" => api_users_url + "/{followings.followee}"
   }
 end
 

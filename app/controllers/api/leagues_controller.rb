@@ -1,4 +1,4 @@
-class Api::LeaguesController < RestController
+class Api::LeaguesController < Api::RestController
 
   protected
 
