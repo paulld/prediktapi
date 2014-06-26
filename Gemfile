@@ -7,3 +7,4 @@ gem 'rabl', github: 'nesquena/rabl'
 gem 'oj'
 gem 'puma'
 gem 'bcrypt'
+gem "paperclip", "~> 4.1"

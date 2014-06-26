@@ -34,4 +34,8 @@ Prediktapi::Application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # give access to ImageMagick and GhostScript:
+  Paperclip.options[:command_path] = "/usr/local/bin/"
+
 end
